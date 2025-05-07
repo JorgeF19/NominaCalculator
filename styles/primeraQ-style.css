@@ -1,0 +1,161 @@
+body {
+  background: radial-gradient(circle, #2e2e2e, #0d0d0e);
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+  height: 100%;
+}
+nav {
+  padding: 20px;
+  background-color: #4d4d4d;
+}
+nav a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  background-color: #c4c2c2;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #313131;
+  transition: all 0.5s ease;
+}
+nav a:hover{
+  color: white;
+  background-color: #313131;
+  border: 2px solid #c4c2c2;
+  
+
+}
+nav div {
+  width: 25rem;
+  background-color: #4d4d4d;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+}
+.contenido {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 90vh;
+  font-size: 1rem;
+}
+.datos-ingresados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 25px;
+  background: radial-gradient(circle, #2e2e2e, #313131);
+  width: 20%;
+  padding: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.459);
+}
+.datos-ingresados .data {
+  display: flex;
+}
+.datos-ingresados .data p {
+  margin-left: 4px;
+}
+button {
+  background-color: #878788;
+
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 10px 1px black;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#confirmacion-registro{
+  position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+@keyframes mostrar {
+  0% { opacity: 0; transform: translateY(0px); }
+  100% { opacity: 1; transform: translateY(+10px); }
+
+}
+@keyframes ocultar {
+  0%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.mostrar{
+  animation: mostrar 0.5s ease forwards;
+}
+.ocultar{
+  animation: ocultar 0.5s ease;
+}
+button:hover {
+  background-color: #2e2e2e;
+  color: white;
+  box-shadow: inset 0px 0px 15px black;
+  cursor: pointer;
+  transform: scale(0.95);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#nomina-values {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 40rem;
+  text-align: center;
+  border-radius: 10px;
+  /* border: 1px solid #0d7e12 ; */
+
+  font-size: 1.3rem;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.459);
+}
+.hide {
+  display: none;
+}
+
+#nomina-values th {
+  height: 2rem;
+  background-color: #a0a0a0;
+
+  color: black;
+}
+#nomina-values td {
+  height: 2rem;
+}
+#nomina-values th,
+td {
+  padding: 5px;
+}
+#nomina-values th:last-child,
+td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#nomina-values th:first-child,
+td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#nomina-values tr {
+  transition: all 0.2s ease;
+}
+#nomina-values tr:hover {
+  background-color: #c2c2c2;
+  color: black;
+}
