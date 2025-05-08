@@ -31,6 +31,7 @@ nav div {
   border-radius: 20px;
   border: 1px solid white;
   max-height: 28rem;
+  width: 20rem;
   transition: height 0.3 ease;
 }
 
@@ -149,21 +150,29 @@ tr th:first-child {
   animation: ocultar 0.5s ease;
 }
 .input-data {
+  display: flex;
   color: white;
   border: 3px solid white;
   border-radius: 25px;
   background: radial-gradient(circle, #2e2e2e, #0d0d0e);
-  padding: 30px;
+  padding: 10px;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.459);
   min-width: 20rem;
   height: 28rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.input-data div {
+.botones{
+  display: inline;
+  
+}
+.input-data .group {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* width: 11rem; */
+  width: 11rem;
 }
 .input-data p {
   margin: 0px;
@@ -183,7 +192,7 @@ tr th:first-child {
 
 button {
   background-color: #878788;
-
+width: fit-content;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
   margin-top: 20px;
@@ -413,11 +422,14 @@ button::after {
   }
   .input-data, .registros {
     margin: 15px;
-    max-width: 50%;
+    max-width: 10rem;
+    flex-direction: column;  
     
   }
   .registros{
     min-width: 20rem;
+
   }
 
 }
+

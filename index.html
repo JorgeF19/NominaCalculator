@@ -16,17 +16,17 @@
     <div class="contenido">
       <div class="input-data">
         <h2>Ingresa tus datos</h2>
-        <div class="horas-laboradas-group">
+        <div class="group">
           <p>Horas laboradas</p>
           <input
             id="hl-value"
-            s
+            
             type="number"
             placeholder="Horas laboradas"
             value="0"
           />
         </div>
-        <div class="horas-festivas-group">
+        <div class="group">
           <p>Horas festivas diurnas</p>
           <input
             id="hf-value"
@@ -35,7 +35,7 @@
             value="0"
           />
         </div>
-        <div class="horas-domingo-group">
+        <div class="group">
           <p>Horas domingo laboradas</p>
           <input
             id="hd-value"
@@ -44,7 +44,7 @@
             value="0"
           />
         </div>
-        <div class="dias-vacaciones-group">
+        <div class="group">
           <p>Dias de vacaciones</p>
           <input
             id="dv-value"
@@ -53,7 +53,7 @@
             value="0"
           />
         </div>
-        <div class="dias-ausente-group">
+        <div class="group">
           <p>Dias ausente</p>
           <input
             id="da-value"
@@ -62,7 +62,7 @@
             value="0"
           />
         </div>
-        <div class="periodo-group">
+        <div class="group">
           <p>Porcentaje de variable</p>
           <input
             id="pv-value"
@@ -71,9 +71,11 @@
             value="100"
           />
         </div>
-
-        <button onclick="calcularPQ()" type="button">Primera quincena</button>
+        <div class="botones">
+          <button onclick="calcularPQ()" type="button">Primera quincena</button>
         <button onclick="calcularSQ()" type="button">Segunda quincena</button>
+        </div>
+        
       </div>
       <!-- Tabla de registros -->
       <div class="registros">
