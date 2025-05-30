@@ -242,3 +242,21 @@ function calcularSQ() {
     window.location.href = "periodos/segundaQ.html";
   }, 500);
 }
+
+fetch("http://localhost:3001/registros", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ fecha: "01/06/2025, 10:00:00", total: "$150.000,00" }),
+})
+  .then((res) => res.json())
+  .then((data) => console.log("Guardado en MongoDB:", data));
+
+fetch("http://localhost:3001/registros")
+  .then((res) => res.json())
+  .then((data) => console.log("Registros:", data));
+
+fetch("http://localhost:3001/registros/ID_DEL_REGISTRO", {
+  method: "DELETE",
+})
+  .then((res) => res.json())
+  .then((data) => console.log("Eliminado:", data));
